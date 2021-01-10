@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvertApi", "AdvertApi\AdvertApi.csproj", "{549E76C4-6787-4523-BE44-97BC17161C3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvertApi.Models", "AdvertApi.Models\AdvertApi.Models.csproj", "{9728C02B-E2C1-456C-BE7D-617DBA7AE321}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{549E76C4-6787-4523-BE44-97BC17161C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549E76C4-6787-4523-BE44-97BC17161C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549E76C4-6787-4523-BE44-97BC17161C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549E76C4-6787-4523-BE44-97BC17161C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9728C02B-E2C1-456C-BE7D-617DBA7AE321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9728C02B-E2C1-456C-BE7D-617DBA7AE321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9728C02B-E2C1-456C-BE7D-617DBA7AE321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9728C02B-E2C1-456C-BE7D-617DBA7AE321}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
