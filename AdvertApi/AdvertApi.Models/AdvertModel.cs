@@ -9,5 +9,7 @@ namespace AdvertApi.Models
         public string Description { get; set; }
 
         public double Price { get; set; }
+
+        public string Id { get; set; }
     }
 }

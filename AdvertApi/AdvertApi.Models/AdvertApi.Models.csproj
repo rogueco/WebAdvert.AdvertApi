@@ -2,6 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <Title>RogueCo Web Advert Microservices</Title>
+        <Authors>Tom Fletcher</Authors>
+        <PackageProjectUrl>https://github.com/rogueco/WebAdvert.AdvertApi</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/rogueco/WebAdvert.AdvertApi</RepositoryUrl>
+        <PackageId>RogueCo.WebAdvert.Microservices</PackageId>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
 </Project>

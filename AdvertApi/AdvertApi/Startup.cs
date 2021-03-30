@@ -1,8 +1,9 @@
+using AdvertApi.HealthChecks;
 using AdvertApi.Services;
 using AutoMapper;
-using AutoMapper.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
@@ -24,6 +25,7 @@ namespace AdvertApi
             services.AddAutoMapper(typeof(AdvertProfile));
             services.AddTransient<IAdvertStorageService, DynamoDbAdvertStorage>();
             services.AddControllers();
+            services.AddHealthChecks().AddCheck<StorageHealthCheck>("Storage");
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "AdvertApi", Version = "v1"}); });
         }
 
@@ -36,6 +38,8 @@ namespace AdvertApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AdvertApi v1"));
             }
+
+            app.UseHealthChecks("/health");
 
             app.UseHttpsRedirection();
 
